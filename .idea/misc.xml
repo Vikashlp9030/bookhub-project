@@ -9,6 +9,11 @@
         <entry key="..\:/AndroidStudio/BookHub/app/src/main/res/drawable-anydpi/ic_favourites.xml" value="0.1" />
         <entry key="..\:/AndroidStudio/BookHub/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/AndroidStudio/BookHub/app/src/main/res/layout/drawer_header.xml" value="0.14" />
+        <entry key="..\:/AndroidStudio/BookHub/app/src/main/res/layout/fragment_about_app.xml" value="0.1480978260869565" />
+        <entry key="..\:/AndroidStudio/BookHub/app/src/main/res/layout/fragment_dashboard.xml" value="0.17760416666666667" />
+        <entry key="..\:/AndroidStudio/BookHub/app/src/main/res/layout/fragment_favourites.xml" value="0.1480978260869565" />
+        <entry key="..\:/AndroidStudio/BookHub/app/src/main/res/layout/fragment_profile.xml" value="0.1480978260869565" />
+        <entry key="..\:/AndroidStudio/BookHub/app/src/main/res/layout/recycler_dashboard_single_row.xml" value="0.1431159420289855" />
         <entry key="..\:/AndroidStudio/BookHub/app/src/main/res/menu/menu_drawer.xml" value="0.22" />
       </map>
     </option>
