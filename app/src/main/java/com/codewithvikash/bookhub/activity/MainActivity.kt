@@ -1,13 +1,17 @@
-package com.codewithvikash.bookhub
+package com.codewithvikash.bookhub.activity
 
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.FrameLayout
-import android.widget.Toolbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import com.codewithvikash.bookhub.R
+import com.codewithvikash.bookhub.fragment.DashboardFragment
+import com.codewithvikash.bookhub.fragment.AboutAppFragment
+import com.codewithvikash.bookhub.fragment.FavouritesFragment
+import com.codewithvikash.bookhub.fragment.ProfileFragment
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -50,7 +54,7 @@ class MainActivity : AppCompatActivity() {
             when(it.itemId){
                 R.id.dashboard ->{
                      supportFragmentManager.beginTransaction()
-                         .replace(R.id.frame,DashboardFragment())
+                         .replace(R.id.frame, DashboardFragment())
                          .addToBackStack("Dashboard")
                          .commit()
                     supportActionBar?.title ="Dashboard"
@@ -59,7 +63,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.favourites ->{
 
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.frame,Favourites())
+                        .replace(R.id.frame, FavouritesFragment())
                         .addToBackStack("Favourites")
                         .commit()
                     supportActionBar?.title = "Faourites"
@@ -67,7 +71,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.profile ->{
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.frame,Profile())
+                        .replace(R.id.frame, ProfileFragment())
                         .addToBackStack("Profile")
                         .commit()
                     supportActionBar?.title = "Profile"
@@ -76,7 +80,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.about_app ->{
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.frame,AboutApp())
+                        .replace(R.id.frame, AboutAppFragment())
                         .addToBackStack("AboutApp")
                         .commit()
                     supportActionBar?.title ="About App"
@@ -107,7 +111,7 @@ class MainActivity : AppCompatActivity() {
   fun openDashboard(){
       val fragment = DashboardFragment()
       val transaction = supportFragmentManager.beginTransaction()
-          .replace(R.id.frame,DashboardFragment())
+          .replace(R.id.frame, DashboardFragment())
           .addToBackStack("Dashboard")
           .commit()
       supportActionBar?.title ="Dashboard"
